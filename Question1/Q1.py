@@ -10,7 +10,7 @@ def encrypt_text(n, m):
             return chr(((ord(char) - ord('N') + (m ** 2)) % 13) + ord('N'))
         else:
             return char
-
+   
     try:
         with open("raw_text.txt", "r") as file:
             raw_text1 = file.read()
