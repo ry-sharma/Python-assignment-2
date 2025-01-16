@@ -1,3 +1,4 @@
+#function to encrypt text
 def encrypt_text(n, m):
     def shift_char(char):
         if 'a' <= char <= 'm':
@@ -25,7 +26,7 @@ def encrypt_text(n, m):
     except FileNotFoundError:
         print("File 'raw_text.txt' not found.")
 
-
+# function to decrypt text
 def decrypt_text(n, m):
     def reverse_shift_char(char):
         if 'a' <= char <= 'm':
@@ -38,7 +39,7 @@ def decrypt_text(n, m):
             return chr(((ord(char) - ord('N') - (m ** 2)) % 13) + ord('N'))
         else:
             return char
-
+#to handle error
     try:
         with open("encrypted_text.txt", "r") as file:
             encrypted_text = file.read()
@@ -52,7 +53,7 @@ def decrypt_text(n, m):
         print("File 'encrypted_text.txt' not found.")
         return ""
 
-
+#function to verify decryption
 def verify_decryption(raw_text1, decrypted_text):
     if raw_text1 == decrypted_text:
         print("Decryption verified: The original and decrypted texts match.")
