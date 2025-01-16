@@ -1,0 +1,2 @@
+Station,Temperature Range
+WYALONG-POST-OFFICE,20.58

@@ -1,0 +1,3 @@
+Category,Station,Average Temperature
+Warmest,MARBLE-BAR,39.715833333333336
+Coolest,CABRAMURRA-SMHEA-AWS,13.04
